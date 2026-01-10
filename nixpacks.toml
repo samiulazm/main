@@ -1,6 +1,6 @@
 [phases.install]
 cmds = [
-  "composer install --no-dev --optimize-autoloader",
+  "COMPOSER_PROCESS_TIMEOUT=600 composer install --no-dev --optimize-autoloader --prefer-dist",
   "npm install"
 ]
 
